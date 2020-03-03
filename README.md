@@ -16,10 +16,10 @@ Getting started:
 
 * Download and install Neo4j
 * Setup the environment for the Neo4j Go driver as described [here](https://github.com/neo4j/neo4j-go-driver#requirements)
-* clone git@github.com:codingfinest/neo4j-go-ogm-university.git
+* clone `git@github.com:codingfinest/neo4j-go-ogm-university.git`
+* cd neo4j-go-ogm-university
 * Update OGM config in `store.go` with the appropriate `username` and `password`
 * Set the env variable `OGM_EAMPLE_SCHOOL_CQL_PATH` to put to the file path pointing to the file for the initial database query
-* cd neo4j-go-ogm-university
 * run the program: `go run main.go`
 
 
