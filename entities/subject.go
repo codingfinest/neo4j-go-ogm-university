@@ -29,7 +29,7 @@ import (
 type Subject struct {
 	gogm.Node
 	Name       string      `json:"name"`
-	Department *Department `gogm:"reltype:CURRICULUM,direction:<-" json:"department"`
+	Department *Department `gogm:"reltype:CURRICULUM,direction:<-" json:"-"`
 	Teachers   []*Teacher  `gogm:"reltype:TAUGHT_BY" json:"teachers"`
 	Courses    []*Course   `gogm:"reltype:SUBJECT_TAUGHT,direction:<-" json:"courses"`
 }

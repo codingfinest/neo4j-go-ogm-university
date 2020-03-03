@@ -55,7 +55,7 @@ func main() {
 	e.Static("/checklist-model", "assets/libs/checklist-model")
 
 	e.Static("/stylesheets", "assets/stylesheets")
-	e.Static("/img", "assets/stylesheets")
+	e.Static("/img", "assets/images")
 
 	e.Static("/html", "assets/html")
 

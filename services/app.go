@@ -24,7 +24,14 @@ package services
 
 import gogm "github.com/codingfinest/neo4j-go-ogm"
 
-var ogm = gogm.New("bolt://localhost:7687", "neo4j", "Pass1234")
+var config = &gogm.Config{
+	"bolt://localhost:7687",
+	"username",
+	"password",
+	gogm.NONE, /*log level*/
+	false /*Allow cyclic ref*/}
+
+var ogm = gogm.New(config)
 
 //NewStore create a new instance of a store
 func NewStore() *Store {

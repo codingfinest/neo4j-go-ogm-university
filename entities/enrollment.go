@@ -31,7 +31,7 @@ import (
 type Enrollment struct {
 	gogm.Relationship `gogm:"reltype:ENROLLED"`
 
-	EnrolledDate time.Time `json:"enrolledDate"`
+	EnrolledDate *time.Time `json:"enrolledDate"`
 
 	Student *Student `gogm:"startNode" json:"student"`
 	Course  *Course  `gogm:"endNode" json:"course"`

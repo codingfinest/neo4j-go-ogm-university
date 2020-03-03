@@ -30,5 +30,5 @@ type Student struct {
 	gogm.Node
 	Name         string        `json:"name"`
 	Enrollments  []*Enrollment `gogm:"reltype:ENROLLED" json:"enrollments"`
-	StudyBuddies []*StudyBuddy `gogm:"reltype:BUDDY,direction:->" json:"studyBuddies"`
+	StudyBuddies []*StudyBuddy `gogm:"reltype:BUDDY,direction:->" json:"-"`
 }

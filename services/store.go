@@ -22,9 +22,7 @@
 
 package services
 
-import (
-	gogm "github.com/codingfinest/neo4j-go-ogm"
-)
+import gogm "github.com/codingfinest/neo4j-go-ogm"
 
 var findOptions = gogm.NewLoadOptions()
 var findAllOptions = gogm.NewLoadOptions()
